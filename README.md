@@ -96,14 +96,13 @@ This is a web application built using PHP, MySQL, Bootstrap, jQuery and Ajax. It
 │ ├── RemoveBookFromCollectionController.php
 │ ├── PromoteToAdminController.php
 │ ├── CreateBookController.php
-│ ├── ActivateUserController.php
 │ └── ...
 ├── css
-│ ├── styles.css
-├── iamges
-│ ├── ...
+│ └── styles.css
+├── images
+│ └── ...
 ├── js
-│ ├── custom.js
+│ └── custom.js
 ├── models
 │ ├── Book.php
 │ ├── User.php
