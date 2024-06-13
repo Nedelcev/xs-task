@@ -1,0 +1,120 @@
+body {
+    padding-top: 56px;
+	display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+	background-color: #f2f2f2;
+}
+
+.container {
+    flex: 1;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.form-container,
+.table-container {
+	max-width: 70%;
+    margin: 70px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative;
+}
+.table-container {
+	overflow: auto;
+    max-height: 600px;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-container .form-group {
+    margin-bottom: 15px;
+}
+
+.customColorStyle {
+	background: #C7D0D5;
+}
+.customColorStyle a {
+    color: black;
+    text-decoration: none;
+}
+.customColorStyle a:hover {
+	background-color: #ddd;
+    color: black;
+}
+
+.admin-menu-toggle {
+	position: fixed;
+    z-index: 2001;
+    cursor: pointer;
+    right: 0;
+    top: 35%;
+	font-size: 30px;
+    background: #ffc107;
+    padding: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    color: white;
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.5s all ease;
+	
+	&.open {
+      right: 250px;
+    }
+}
+.admin-menu {
+	position: fixed;
+    z-index: 2000;
+    right: -250px;
+    top: 35%;
+	background: #C7D0D5;
+    border-bottom-left-radius: 25px;
+	width: 250px;
+	height: 200px;
+	border: 1px solid #ffc107;
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.5s all ease;
+	
+	&.open {
+      right: 0;
+    }
+}
+.admin-menu ul {
+	padding-left: 0;
+	list-style: none;
+	text-align: center;
+}
+.admin-menu ul li {
+	padding: 10px;
+    border-bottom: 1px solid #ffc107;
+	background: #f2f2f2;
+	font-weight: bold;
+	text-decoration: none;
+}
+.admin-menu ul li:hover {
+	background: #ffc107;
+}
+.lightgreencolorInput {
+	background: lightgreen;
+}
+.lightcoralcolorInput {
+	background: lightcoral;
+}
+.displayNone {
+	display: none;
+}

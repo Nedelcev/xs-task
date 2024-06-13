@@ -1,0 +1,18 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Включва пренаписване на URL адресите
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Прави пренаписване на URL адресите към index.php
+    RewriteRule ^ index.php [QSA,L]
+	
+    #RewriteRule ^(.*)\.php$ /$1 [R=301,L]
+</IfModule>
+
+# Защита на .htaccess файла
+<Files .htaccess>
+    Order Allow,Deny
+    Deny from all
+</Files>
