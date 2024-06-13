@@ -80,50 +80,57 @@ This is a web application built using PHP, MySQL, Bootstrap, jQuery and Ajax. It
 
 ## Project Structure
 
-/path/to/your/project
-├── admin
-│ ├── create-book.php
-│ ├── inactive-users.php
-│ ├── users-list.php
-├── controllers
-│ ├── ActivateUserController.php
-│ ├── AddBookToCollectionController.php
-│ ├── CollectBookInformation.php
-│ ├── EditBookController.php
-│ ├── EditProfileController.php
-│ ├── LoginController.php
-│ ├── RegisterController.php
-│ ├── RemoveBookFromCollectionController.php
-│ ├── PromoteToAdminController.php
-│ ├── CreateBookController.php
-│ └── ...
-├── css
-│ └── styles.css
-├── images
-│ └── ...
-├── js
-│ └── custom.js
-├── models
-│ ├── Book.php
-│ ├── User.php
-│ └── ...
-├── templates
-│ ├── footer.php
-│ ├── header.php
-├── views
-│ ├── login.php
-│ ├── register.php
-│ ├── 404.php
-│ ├── edit-profile.php
-│ ├── edit-book.php
-│ ├── my-books.php
-│ └── ...
-├── db.php
-├── .htaccess
-├── index.php
-├── logout.php
-├── home.php
-└── ...
+- **admin/**: This folder contains admin pages.
+  - `create-book.php`: Page for creating a book.
+  - `inactive-users.php`: Page for displaying inactive users.
+  - `users-list.php`: Page for displaying the list of users.
+
+- **controllers/**: This folder contains all the controllers that handle the application logic.
+  - `ActivateUserController.php`: Controller for activating a user.
+  - `AddBookToCollectionController.php`: Controller for adding a book to the user's collection.
+  - `CollectBookInformation.php`: Controller for collecting book information.
+  - `EditBookController.php`: Controller for editing a book.
+  - `EditProfileController.php`: Controller for editing user profiles.
+  - `LoginController.php`: Controller for user login.
+  - `RegisterController.php`: Controller for user registration.
+  - `RemoveBookFromCollectionController.php`: Controller for removing a book from the user's collection.
+  - `PromoteToAdminController.php`: Controller for promoting a user to an admin.
+  - `CreateBookController.php`: Controller for creating a book.
+  - ...
+
+- **css/**: Folder for stylesheets.
+  - `styles.css`: Main CSS file for styling.
+
+- **images/**: Folder for images.
+  - ...
+
+- **js/**: Folder for JavaScript files.
+  - `custom.js`: Main JavaScript file for custom scripts.
+
+- **models/**: Folder for data models.
+  - `Book.php`: Book model.
+  - `User.php`: User model.
+  - ...
+
+- **templates/**: Folder for templates.
+  - `footer.php`: Footer template.
+  - `header.php`: Header template.
+
+- **views/**: Folder for views.
+  - `login.php`: Login page.
+  - `register.php`: Registration page.
+  - `404.php`: 404 error page.
+  - `edit-profile.php`: Profile editing page.
+  - `edit-book.php`: Book editing page.
+  - `my-books.php`: User's books page.
+  - ...
+
+- **db.php**: Database connection file.
+- **.htaccess**: Apache configuration file.
+- **index.php**: Main entry point of the application.
+- **logout.php**: Logout script.
+- **home.php**: Home page of the application.
+- ...
 
 ## Database Schema
 
